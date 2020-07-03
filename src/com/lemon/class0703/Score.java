@@ -1,10 +1,10 @@
 package com.lemon.class0703;
 
 /**
- * @time: 2020/7/3 16:59
+ * @time: 2020/7/4 0:12
  * @author: Mr.Right
  * @contact: 348533713@qq.com
- * @file: HomeWork
+ * @file: Score.class
  * @desc: ┏┓　　　┏┓+ +
  * 　　　┏┛┻━━━┛┻┓ + +
  * 　　　┃　　　　　　　┃
@@ -27,5 +27,5 @@ package com.lemon.class0703;
  * 　　　　　　┃┫┫　┃┫┫
  * 　　　　　　┗┻┛　┗┻┛+ + + +
  */
-public class HomeWork {
+public class Score {
 }

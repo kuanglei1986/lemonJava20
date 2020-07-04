@@ -29,12 +29,12 @@ package com.lemon.class0703.homework;
  */
 public class StudentTest {
     public static void main(String[] args) {
-        Student s1=new Student("Mr.Right",10);  //有参构造
-        s1.setName("zhangsan");
-        s1.setAge(10);
-        System.out.println("学生姓名："+s1.getName());
-        System.out.println("学生年龄："+s1.getAge());
-        System.out.println("学生分数："+s1.getScore());
+        Student s1=new Student("Lemon",10);  //有参构造
+        s1.show();
+        System.out.println("====================");
+        s1.setName("Mr.Right");
+        s1.setAge(25);
+        s1.show();
 
     }
 }

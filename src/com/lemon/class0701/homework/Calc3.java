@@ -1,4 +1,4 @@
-package com.lemon.class0701;
+package com.lemon.class0701.homework;
 
 import java.util.Scanner;
 

@@ -1,10 +1,10 @@
-package com.lemon.class0701;
+package com.lemon.class0703.homework;
 
 /**
- * @time: 2020/7/1 23:26
+ * @time: 2020/7/3 16:59
  * @author: Mr.Right
  * @contact: 348533713@qq.com
- * @file: HomeWork2.class
+ * @file: HomeWork
  * @desc: ┏┓　　　┏┓+ +
  * 　　　┏┛┻━━━┛┻┓ + +
  * 　　　┃　　　　　　　┃
@@ -27,21 +27,49 @@ package com.lemon.class0701;
  * 　　　　　　┃┫┫　┃┫┫
  * 　　　　　　┗┻┛　┗┻┛+ + + +
  */
-public class Car {
-    /*
-    2.创建一个Car类，有颜色、车轮、品牌属性，有启动、刹车功能
-     */
-    String color;  //颜色
-    String wheel;  //车轮
-    String brand;  //品牌
+public class Student {
+    private String name;
+    private int age;
+    private int score =100;
 
-    public static void startUp(){
-        System.out.println("启动");
+//    public Student(){
+//        //空参构造
+//    }
+
+    public Student(String n,int a){
+        /*
+        有参构造
+         */
+        this.name=n;
+        this.age=a;
+//        this.score=s;
+        if (this.age<15){
+            this.age=15;
+        }
     }
 
-    public static void brake(){
-        System.out.println("刹车");
+    public void setName(String name) {
+        this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public void setAge(int age) {
+        this.age = age;
+        if (this.age<15){
+            this.age=15;
+            System.out.println("年龄不能小于15岁，默认设置为15岁");
+        }
+
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public int getScore() {
+        return score;
+    }
 }

@@ -36,7 +36,6 @@ public class FunctionDemo {
         System.out.println("A班及格人数："+ countPassStudent(classA));
         System.out.println("B班及格人数："+ countPassStudent(classB));
         System.out.println("C班及格人数："+ countPassStudent(classC));
-
     }
 
     //封装循环方法，每次调用时传数组参数，返回值

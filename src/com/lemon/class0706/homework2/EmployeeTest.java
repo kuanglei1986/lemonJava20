@@ -1,10 +1,10 @@
 package com.lemon.class0706.homework2;
 
 /**
- * @time: 2020/7/7 11:07
+ * @time: 2020/7/7 19:10
  * @author: Mr.Right
  * @contact: 348533713@qq.com
- * @file: Manager
+ * @file: EmployeeTest
  * @desc: ┏┓　　　┏┓+ +
  * 　　　┏┛┻━━━┛┻┓ + +
  * 　　　┃　　　　　　　┃
@@ -27,20 +27,21 @@ package com.lemon.class0706.homework2;
  * 　　　　　　┃┫┫　┃┫┫
  * 　　　　　　┗┻┛　┗┻┛+ + + +
  */
-public class Manager extends Employee{
-    public Manager(){
-        System.out.println("---项目经理---");
+public class EmployeeTest {
+    public static void main(String[] args) {
+        Employee e = new Coder();
+        method(e);
+
+        e = new Tester();
+        method(e);
+
+        e = new Manager();
+        method(e);
     }
 
-    @Override
-    public void work() {
-//        super.work();
-        System.out.println("整文档...");
-    }
 
-    @Override
-    public void sleep() {
-//        super.sleep();
-        System.out.println("他们都睡了，我也睡会儿...");
+    public static void method(Employee e){
+        e.work();
+        e.sleep();
     }
 }

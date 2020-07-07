@@ -45,15 +45,16 @@ public class BankTest {
 //        Teacher t = (Teacher)p;
 //        t.show();
 //        People p = new Teacher();
-        //有什么优点，少定义变量，一个变量接受多种类似的数据。
-        //不用多态必须3个变量
+////        有什么优点，少定义变量，一个变量接受多种类似的数据。
+////        不用多态必须3个变量
 //        Teacher t = new Teacher();
 //        Tester t2 = new Tester();
 //        Worker w = new Worker();
         //用了多态只有一个变量，扩展性变强，可以接受People任意子类对象
         People p = new Teacher();
-        p = new Tester();
-        p = new Worker();
+        withdraw(p);
+//        p = new Tester();
+//        p = new Worker();
     }
     //public static void withdraw(int a)   { // int a = 10;
     public static void withdraw(People p) { //People p = new Teacher(); People父类可以接受任意子类

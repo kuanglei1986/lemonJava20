@@ -27,5 +27,20 @@ package com.lemon.class0706.homework2;
  * 　　　　　　┃┫┫　┃┫┫
  * 　　　　　　┗┻┛　┗┻┛+ + + +
  */
-public class Tester {
+public class Tester extends Employee{
+    public Tester(){
+        System.out.println("---测试员---");
+    }
+
+    @Override
+    public void work() {
+//        super.work();
+        System.out.println("努力找Bug！");
+    }
+
+    @Override
+    public void sleep() {
+//        super.sleep();
+        System.out.println("Bug太多了，睡一会儿...");
+    }
 }

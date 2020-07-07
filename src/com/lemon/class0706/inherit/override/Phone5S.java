@@ -48,7 +48,7 @@ public class Phone5S extends Phone {
         System.out.println("siri 讲中文");
         show();
         //this 当前对象
-        this.siri();
+//        this.siri();
         this.show();
     }
 

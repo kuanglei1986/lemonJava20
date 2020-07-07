@@ -27,5 +27,18 @@ package com.lemon.class0706.homework1;
  * 　　　　　　┃┫┫　┃┫┫
  * 　　　　　　┗┻┛　┗┻┛+ + + +
  */
-public class Dog {
+public class Dog extends Animal{
+    public Dog(){
+        System.out.println("Dog空参构造");
+    }
+
+    public void watchHouse(){
+        System.out.println("Dog会看家......");
+    }
+
+    @Override
+    public void sleep() {
+//        super.sleep();
+        System.out.println("Dog睡觉......");
+    }
 }

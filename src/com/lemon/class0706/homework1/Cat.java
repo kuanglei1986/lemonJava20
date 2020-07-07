@@ -27,5 +27,18 @@ package com.lemon.class0706.homework1;
  * 　　　　　　┃┫┫　┃┫┫
  * 　　　　　　┗┻┛　┗┻┛+ + + +
  */
-public class Cat {
+public class Cat extends Animal{
+    public Cat(){
+        System.out.println("Cat空参构造");
+    }
+
+    public void catchMouse(){
+        System.out.println("猫捉老鼠......");
+    }
+
+    @Override
+    public void eat() {
+//        super.eat();
+        System.out.println("吃猫粮......");
+    }
 }

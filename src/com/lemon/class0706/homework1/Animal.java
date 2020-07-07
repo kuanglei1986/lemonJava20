@@ -28,4 +28,36 @@ package com.lemon.class0706.homework1;
  * 　　　　　　┗┻┛　┗┻┛+ + + +
  */
 public class Animal {
+    public Animal(){
+        System.out.println("Animal空参构造");
+    }
+
+    public void eat(){
+        System.out.println("吃饭......");
+    }
+
+    public void sleep(){
+        System.out.println("睡觉......");
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

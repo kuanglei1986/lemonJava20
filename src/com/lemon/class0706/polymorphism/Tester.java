@@ -27,9 +27,7 @@ package com.lemon.class0706.polymorphism;
  * 　　　　　　┃┫┫　┃┫┫
  * 　　　　　　┗┻┛　┗┻┛+ + + +
  */
-public class Tester extends People {
-    public Tester() {
-    }
+public class Tester  extends People{
 
     public void enter() {
         System.out.println("username：xiaoli");

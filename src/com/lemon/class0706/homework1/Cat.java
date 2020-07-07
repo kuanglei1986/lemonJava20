@@ -1,10 +1,10 @@
-package com.lemon.class0706.inherit;
+package com.lemon.class0706.homework1;
 
 /**
- * @time: 2020/7/7 9:00
+ * @time: 2020/7/7 11:06
  * @author: Mr.Right
  * @contact: 348533713@qq.com
- * @file: Student
+ * @file: Cat
  * @desc: ┏┓　　　┏┓+ +
  * 　　　┏┛┻━━━┛┻┓ + +
  * 　　　┃　　　　　　　┃
@@ -27,12 +27,5 @@ package com.lemon.class0706.inherit;
  * 　　　　　　┃┫┫　┃┫┫
  * 　　　　　　┗┻┛　┗┻┛+ + + +
  */
-public class Student extends Person {
-    public void playGame() {
-        System.out.println("打游戏");
-        //name 私有
-        System.out.println(height);
-        System.out.println(sex); //受保护
-        System.out.println(age); //公共
-    }
+public class Cat {
 }

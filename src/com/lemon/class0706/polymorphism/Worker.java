@@ -27,9 +27,7 @@ package com.lemon.class0706.polymorphism;
  * 　　　　　　┃┫┫　┃┫┫
  * 　　　　　　┗┻┛　┗┻┛+ + + +
  */
-public class Worker extends People {
-    public Worker() {
-    }
+public class Worker  extends People{
 
     public void enter() {
         System.out.println("username：laowang");

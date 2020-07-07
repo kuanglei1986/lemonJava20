@@ -28,11 +28,10 @@ package com.lemon.class0706.inherit.override;
  * 　　　　　　┗┻┛　┗┻┛+ + + +
  */
 public class Phone {
-    public Phone() {
-    }
 
-    public Phone(String name) {
-    }
+    public Phone() {}
+
+    public Phone(String name) {}
 
     public void siri() {
         System.out.println("siri 讲英文");

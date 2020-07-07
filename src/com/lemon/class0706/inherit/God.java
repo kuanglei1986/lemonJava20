@@ -31,6 +31,8 @@ public class God {
     public int weight;
 
     public God() {
+        super();
         System.out.println("God 无参构造");
     }
+
 }

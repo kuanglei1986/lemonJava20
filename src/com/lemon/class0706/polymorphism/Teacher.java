@@ -27,12 +27,15 @@ package com.lemon.class0706.polymorphism;
  * 　　　　　　┃┫┫　┃┫┫
  * 　　　　　　┗┻┛　┗┻┛+ + + +
  */
-public class Teacher extends People {
-    public Teacher() {
-    }
+public class Teacher extends People{
 
     public void enter() {
         System.out.println("username：zhangsan");
         System.out.println("password:123456");
     }
+
+    public void show() {
+        System.out.println("show.....");
+    }
+
 }

@@ -28,13 +28,17 @@ package com.lemon.class0706.inherit;
  * 　　　　　　┗┻┛　┗┻┛+ + + +
  */
 public class Doctor extends Person {
+
     public Doctor() {
+        super();
         System.out.println("Doctor 无参构造");
     }
 
     public void see() {
         System.out.println("看牙医");
-        System.out.println(this.sex);
-        System.out.println(this.age);
+        //name 私有
+        //height 默认
+        System.out.println(sex); //受保护
+        System.out.println(age); //公共
     }
 }

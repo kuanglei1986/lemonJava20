@@ -28,12 +28,17 @@ package com.lemon.class0706.inherit;
  * 　　　　　　┗┻┛　┗┻┛+ + + +
  */
 public class Person extends God {
+    //所有都能访问
     public int age;
+    //只是要子类都能访问
     protected String sex;
+    //默认修饰，同一个包下才能访问
     int height;
+    //当前类才能访问
     private String name;
 
     public Person() {
+        super();
         System.out.println("Person 无参构造");
     }
 

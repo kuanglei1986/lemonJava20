@@ -28,12 +28,11 @@ package com.lemon.class0706.inherit.override;
  * 　　　　　　┗┻┛　┗┻┛+ + + +
  */
 public class OverrideDemo {
-    public OverrideDemo() {
-    }
-
     public static void main(String[] args) {
         Phone5S p = new Phone5S();
+        //如果方法重写了，那么一定调用重写之后的方法。
         p.siri();
+
         Phone p2 = new Phone();
         p2.siri();
     }

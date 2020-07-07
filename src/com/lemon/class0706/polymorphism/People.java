@@ -28,9 +28,10 @@ package com.lemon.class0706.polymorphism;
  * 　　　　　　┗┻┛　┗┻┛+ + + +
  */
 public class People {
-    public People() {
-    }
 
     public void enter() {
+        System.out.println("username:xiaoming");
+        System.out.println("password:666666");
     }
+
 }

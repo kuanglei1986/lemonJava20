@@ -28,9 +28,6 @@ package com.lemon.class0706.inherit;
  * 　　　　　　┗┻┛　┗┻┛+ + + +
  */
 public class Teacher extends Person {
-    public Teacher() {
-    }
-
     public void teach() {
         System.out.println("上课...");
     }

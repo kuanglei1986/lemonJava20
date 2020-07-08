@@ -42,7 +42,7 @@ public class HomeWork1 {
          */
         ArrayList<Integer> l =new ArrayList<Integer>();
         for (int i=100;i<1000;i++){
-            if (i==method(i)){
+            if (i==method(i)){    //调用求立方 方法
                 l.add(i);
             }
         }

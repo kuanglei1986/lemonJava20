@@ -1,12 +1,10 @@
-package com.lemon.class0708.homework;
-
-import com.lemon.class0703.homework.StudentTest;
+package com.lemon.class0708.HomeWork2;
 
 /**
- * @time: 2020/7/9 0:24
+ * @time: 2020/7/9 11:13
  * @author: Mr.Right
  * @contact: 348533713@qq.com
- * @file: HomeWork4.class
+ * @file: PersonTest
  * @desc: ┏┓　　　┏┓+ +
  * 　　　┏┛┻━━━┛┻┓ + +
  * 　　　┃　　　　　　　┃
@@ -29,21 +27,23 @@ import com.lemon.class0703.homework.StudentTest;
  * 　　　　　　┃┫┫　┃┫┫
  * 　　　　　　┗┻┛　┗┻┛+ + + +
  */
-/*
- 4、有Student类公有属性name、age、score
- a、创建5个Student对象存放在Student数组中
- b、循环打印Student数组，输出学生的name、age、score
- c、提供show(Student s),方法根据学生score输出对应语句
- score小于60输出不及格，score大于等于60小于90输出及格，score大于等于90小于等于100输出优秀。
- */
-public class Student {
-    String name;
-    int age;
-    int score;
+public class PersonTest {
+    public static void main(String[] args) {
+//        Teacher t = new Teacher();
+//        t.name = "zhangsan";
+//        t.age = 18;
+//        t.play();
+        //共有属性/方法可以调用，私有不能调用
+//        JavaTeacher jt = new JavaTeacher();
+//        jt.name = "lisi";
+//        jt.age = 20 ;
+//        jt.play();
 
-    public Student(String name,int age,int score){
-        this.name=name;
-        this.age=age;
-        this.score=score;
+        //多态
+        Person p = new Teacher();
+        p.play();
+
+
+
     }
 }

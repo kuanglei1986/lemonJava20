@@ -1,4 +1,4 @@
-package com.lemon.class0708.homework;
+package com.lemon.class0708.homework1;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -30,10 +30,7 @@ import java.util.Scanner;
  * 　　　　　　┃┫┫　┃┫┫
  * 　　　　　　┗┻┛　┗┻┛+ + + +
  */
-/*
-        一、循环、if、数组 1、求1到1000的水仙花数，所谓的水仙花数就是一个三位数它的各个数的立方和等于该数本身。
-        153他就是一个水仙花数，1的立方加上5的立方再加上3的立方就等于153。（1*1*1+5*5*5+3*3*3=153）
-         */
+
 public class HomeWork1 {
     public static void main(String[] args) {
         /*
@@ -58,6 +55,18 @@ public class HomeWork1 {
         }
         System.out.println("===============");
 
+        //5、输出两个数组相同的内容，例如：{1,3,4,10} {11,3,13,55} 结果输出：3 （提示使用双重循环）
+        int[] list1={1,3,5,7,9};
+        int[] list2={2,3,4,8,9};
+        for (int value : list1) {
+            for (int j = 0; j < list2.length; j++) {
+                if (value == list2[j]) {
+                    System.out.println("重复数据：" + value);
+                }
+            }
+        }
+        System.out.println("===============");
+
         //猜数字
         int num = (int)(Math.random()*100+1);     //生成1-100之间的随机整数
         System.out.println("猜数字游戏开始，请输入数字");
@@ -77,6 +86,7 @@ public class HomeWork1 {
                 System.out.println("输入错误，请重新输入");
             }
         }
+
     }
 
     public static int method(int a){

@@ -39,6 +39,18 @@ public class Case {
         this.apiId=apiId;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setApiId(int apiId) {
+        this.apiId = apiId;
+    }
+
     public int getId() {
         return id;
     }

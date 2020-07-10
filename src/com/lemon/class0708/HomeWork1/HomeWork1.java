@@ -1,4 +1,4 @@
-package com.lemon.class0708.homework1;
+package com.lemon.class0708.HomeWork1;
 
 import java.util.ArrayList;
 import java.util.Scanner;

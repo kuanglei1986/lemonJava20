@@ -1,4 +1,4 @@
-package com.lemon.class0708.homework1;
+package com.lemon.class0708.HomeWork1;
 
 /**
  * @time: 2020/7/9 0:24
@@ -35,9 +35,9 @@ package com.lemon.class0708.homework1;
  score小于60输出不及格，score大于等于60小于90输出及格，score大于等于90小于等于100输出优秀。
  */
 public class Student {
-    String name;
-    int age;
-    int score;
+    public String name;
+    public int age;
+    public int score;
 
     public Student(String name,int age,int score){
         this.name=name;

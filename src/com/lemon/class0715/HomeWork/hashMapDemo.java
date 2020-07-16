@@ -1,8 +1,6 @@
 package com.lemon.class0715.HomeWork;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * @time: 2020/7/16 10:32
@@ -39,37 +37,49 @@ import java.util.Set;
  */
 public class hashMapDemo {
     public static void main(String[] args) {
-        HashMap<String,HashMap<String,String>> studentA = new HashMap<>();
-        HashMap<String,HashMap<String,String>> studentB = new HashMap<>();
-        HashMap<String,HashMap<String,String>> studentC = new HashMap<>();
-        HashMap<String,HashMap<String,String>> studentD = new HashMap<>();
-        HashMap<String,HashMap<String,String>> studentE = new HashMap<>();
-        studentA.put("studentA",newPut("zhangsan","25","男"));
-        studentB.put("studentB",newPut("lisi","26","男"));
-        studentC.put("studentC",newPut("xiaohua","27","女"));
-        studentD.put("studentD",newPut("xiaoming","28","男"));
-        studentE.put("studentE",newPut("xiaohong","29","女"));
+        HashMap<String,Student> class1801 = new HashMap<>();
+        HashMap<String,Student> class1802 = new HashMap<>();
+        class1801.put("studentA",studentDemo("zhangsan",25,"男"));
+        class1801.put("studentB",studentDemo("lisi",26,"男"));
+        class1801.put("studentC",studentDemo("xiaohua",27,"女"));
+        class1802.put("studentD",studentDemo("xiaoming",28,"男"));
+        class1802.put("studentE",studentDemo("xiaohong",29,"女"));
 
-        HashMap<String,HashMap> class1801=new HashMap<>();
-        HashMap<String,HashMap> class1908=new HashMap<>();
+        Set<String> set = class1801.keySet();
+        System.out.println("1801班级学生如下:");
+        for (String key : set){
+            System.out.println("id:"+key);
+            show(class1801.get(key));
+            System.out.println("=====");
+        }
 
+        System.out.println("==========================");
 
+        Set<Map.Entry<String, Student>> entrySet= class1802.entrySet();
+        System.out.println("1802班级学生如下:");
+        for (Map.Entry<String, Student> entry : entrySet){
+            System.out.println("id:"+entry.getKey());
+            show(entry.getValue());
+            System.out.println("=====");
+        }
 
     }
 
-    public static HashMap<String,String> newPut(String name, String age, String gender){
-        HashMap<String,String> s = new HashMap<>();
-        s.put("name",name);
-        s.put("age",age);
-        s.put("gender",gender);
-        return s;
+    /**
+     *
+     * @param name 姓名
+     * @param age 年领
+     * @param gender 性别
+     * @return s 返回map
+     */
+    public static Student studentDemo(String name, Integer age, String gender){
+        return new Student(name,age,gender);
     }
 
-    public static void show(HashMap<String,String> s){
-        System.out.println(s.get("name"));
-        System.out.println(s.get("gender"));
-        System.out.println(s.get("age"));
-        System.out.println("--------");
+    public static void show(Student student){
+        System.out.println("姓名:"+student.getName());
+        System.out.println("年龄:"+student.getAge());
+        System.out.println("性别:"+student.getGender());
     }
 
 

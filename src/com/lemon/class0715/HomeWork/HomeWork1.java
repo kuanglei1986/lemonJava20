@@ -3,6 +3,7 @@ import javax.lang.model.element.NestingKind;
 import java.security.Key;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 
 /**
@@ -55,6 +56,11 @@ public class HomeWork1 {
         System.out.println("====================");
 
         //遍历2
+        Set<Entry<String,String>> entrySet= map1.entrySet();
+        for (Entry<String,String> entry : entrySet){
+            System.out.println(entry.getKey()+"="+entry.getValue());
+        }
+        System.out.println("====================");
 
 
         if (map1.containsKey("mobile_phone")){

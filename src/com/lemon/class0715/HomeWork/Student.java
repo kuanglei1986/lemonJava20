@@ -28,9 +28,9 @@ package com.lemon.class0715.HomeWork;
  * 　　　　　　┗┻┛　┗┻┛+ + + +
  */
 public class Student {
-    String name;
-    Integer age;
-    String gender;
+    private String name;
+    private Integer age;
+    private String gender;
 
     public Student(String name,Integer age,String gender){
         this.name=name;
